@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- DataTables CSS -->
+    <link
+      href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Footer & Header Import -->
+    <script>
+      $(function () {
+        $("#header").load("/html/header.html");
+        $("#footer").load("/html/footer.html");
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $("#nirmal").load("/html/nirmal.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="web">
+      <div class="product-home" id="product-home">
+        <div id="header"></div>
+        <img
+          src="/assets/imgs/product_header.png"
+          class="product_header"
+          alt="header image"
+        />
+        <div class="text-overlay">
+          <p class="product_title">PRODUCT PORTFOLIO</p>
+          <p class="product_desc">
+            we offer a huge array of shapes with extensive assortments. All of
+            our stones are produced in-house, ensuring consistent, top-quality
+            results every time. With direct access to the best mines, we assure
+            our customers of a steady and reliable stream of polished diamonds.
+          </p>
+        </div>
+      </div>
+      <div class="product-list" id="product-list">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts1.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts2.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts3.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts4.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts5.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts6.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts7.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts8.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts9.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+            <div class="col-md">
+              <img
+                class="diamon_cuts"
+                src="/assets/imgs/Diamond_cuts10.jpg"
+                alt="Diamond_cuts"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="diamond-search" id="diamond-search">
+        <div class="container">
+          <p class="search_title">Diamond Search</p>
+          <form class="form_container">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label class="feild_title" for="inputshape">Shape</label>
+                <select id="inputshape" class="form-control">
+                  <option value="ROUND" selected>Round</option>
+                  <option value="OVAL">Oval</option>
+                  <option value="HEART">Heart</option>
+                  <option value="CUSHION">CUSHION</option>
+                  <option value="EMERALD">EMERALD</option>
+                  <option value="HEART">Heart</option>
+                  <option value="RADIANT">RADIANT</option>
+                  <option value="PRINCESS">PRINCESS</option>
+                  <option value="PEAR">PEAR</option>
+                  <option value="ASSCHER">ASSCHER</option>
+                  <option value="MARQUISE">MARQUISE</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label class="feild_title" for="inputPassword4"
+                  >Diamond Type</label
+                >
+                <select id="inputtype" class="form-control">
+                  <option value="lab_grown">Lab Grown Diamonds</option>
+                  <option value="natural" selected>Natural Diamonds</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label class="feild_title" for="inputcolor">Color</label>
+                <select id="inputcolor" class="form-control">
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="H" selected>H</option>
+                  <option value="G">G</option>
+                  <option value="I">I</option>
+                  <option value="J">J</option>
+                  <option value="K">K</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+                  <option value="N">N</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label class="feild_title" for="inputclarity">CLARITY</label>
+                <select id="inputclarity" class="form-control">
+                  <option value="VVS1" selected>VVS1</option>
+                  <option value="VVS2">VVS2</option>
+                  <option value="VS1">VS1</option>
+                  <option value="VS2">VS2</option>
+                  <option value="SI1">SI1</option>
+                  <option value="SI2">SI2</option>
+                  <option value="SI3">SI3</option>
+                  <option value="I1">I1</option>
+                  <option value="I2">I2</option>
+                  <option value="I3">I3</option>
+                  <option value="IF">IF</option>
+                  <option value="VVS-VS">VVS-VS</option>
+                  <option value="VS-SI">VS-SI</option>
+                  <option value="VVS">VVS</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label class="feild_title" for="inputcut">CUT</label>
+                <select id="inputcut" class="form-control">
+                  <option value="G">GOOD</option>
+                  <option value="EX" selected>EXCELLENT</option>
+                  <option value="VG">VERY GOOD</option>
+                  <option value="3EX">IDEAL</option>
+                  <option value="F">FAIR</option>
+                  <option value="P">POOR</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label class="feild_title" for="inputpolish">POLISH</label>
+                <select id="inputpolish" class="form-control">
+                  <option value="G">GOOD</option>
+                  <option value="EX" selected>EXCELLENT</option>
+                  <option value="VG">VERY GOOD</option>
+                  <option value="3EX">IDEAL</option>
+                  <option value="F">FAIR</option>
+                  <option value="P">POOR</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label class="feild_title" for="inputsym">SYMETRY</label>
+                <select id="inputsym" class="form-control">
+                  <option value="G" selected>GOOD</option>
+                  <option value="EX">EXCELLENT</option>
+                  <option value="VG">VERY GOOD</option>
+                  <option value="3EX">IDEAL</option>
+                  <option value="F">FAIR</option>
+                  <option value="P">POOR</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- <div class="form-group">
+                <label class="feild_title" for="inputAddress">Address</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="1234 Main St"
+                />
+                </div>
+                <div class="form-group">
+                <label class="feild_title" for="inputAddress2">Address 2</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Apartment, studio, or floor"
+                />
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="feild_title" for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label class="feild_title" for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="feild_title" for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" />
+                </div>
+                </div>
+                <div class="form-group">
+                <div class="form-check">
+                    <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                    />
+                    <label
+                    class="feild_title"
+                    class="form-check-label"
+                    for="gridCheck"
+                    >
+                    Check me out
+                    </label>
+                </div>
+                </div> -->
+            <button
+              type="submit"
+              id="searchdiamond"
+              class="btn btn-primary search-btn"
+            >
+              Search
+            </button>
+            <button
+              type="button"
+              id=""
+              onclick="window.location.reload()"
+              class="btn btn-primary search-btn"
+            >
+              Reset
+            </button>
+          </form>
+        </div>
+        <div class="container table-responsive p-5 form_container">
+          <table
+            id="diamondtb"
+            class="table table-striped table-bordered"
+            style="width: 100%"
+          >
+            <thead>
+              <tr>
+                <th>Shape</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Clarity</th>
+                <th>Cut</th>
+                <th>Polish</th>
+                <th>Symetry</th>
+                <th>Cert No.</th>
+                <th>RAP</th>
+                <th>RP Disc</th>
+                <th>RP Price</th>
+                <th>Lab</th>
+              </tr>
+            </thead>
+            <!-- <tbody>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                        </tr><tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                        </tr>
+                        
+                    </tbody> -->
+          </table>
+        </div>
+
+        <div id="nirmal" class=""></div>
+      </div>
+    </div>
+
+    <div id="footer" class=""></div>
+
+    <!-- JavaScript -->
+    <script src="/js/script.js"></script>
+    <script src="/js/product.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+  </body>
+</html>

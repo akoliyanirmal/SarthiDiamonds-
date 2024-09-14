@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Footer & Header Import -->
+    <script>
+      $(function () {
+        $("#header").load("/html/header.html");
+        $("#footer").load("/html/footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="web">
+      <div class="product-home">
+        <div id="header"></div>
+        <img
+          src="/assets/imgs/contact_header.png"
+          class="product_header"
+          alt="header image"
+        />
+        <div class="text-overlay">
+          <p class="product_title">Contact Us</p>
+          <p class="product_desc">
+            Your voice matters. We're here to listen, assist, and delight in
+            every conversation. Let's start talking!
+          </p>
+        </div>
+      </div>
+      <div class="about-us" id="location-list">
+        <p class="main-title">Locations</p>
+        <div class="row">
+          <div class="col-md add-details maps">
+            <p class="loc-title">Corporate Office</p>
+            <p>
+              <a
+                class="loc-details"
+                href="https://maps.app.goo.gl/RtwnfYZ67bD3nDvh7"
+                target="_blank"
+                >339 Time Trade Center infornt of polaris mall, canal road,
+                surat</a
+              >
+            </p>
+            <p>
+              Tel:
+              <a class="loc-details" href="tel:+91 8485914523"
+                >+91 8485914523</a
+              >
+            </p>
+            <p>
+              Email:
+              <a
+                class="loc-details"
+                href="mailto:sarthidiamonds.surat@gmail.com"
+                >sarthidiamonds.surat@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-md add-details" id="maps">
+            <p class="loc-title">Manufacturing Unit</p>
+            <p>
+              <a
+                class="loc-details"
+                href="https://maps.app.goo.gl/bmhtouTVLSrBsW8L9"
+                target="_blank"
+                >151 Gayatri Complex Near Rachna circle, Minibazar, Surat</a
+              >
+            </p>
+            <p>
+              Tel:
+              <a class="loc-details" href="tel:+91 8758407945"
+                >+91 8758407945</a
+              >
+            </p>
+            <p>
+              Email:
+              <a
+                class="loc-details"
+                href="mailto:sarthidiamonds.surat@gmail.com"
+                >sarthidiamonds.surat@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="founders col-md-12" id="founders">
+        <img class="diamond2" src="/assets/imgs/diamond2.png" alt="Diamond2" />
+        <p class="founders-title">Map</p>
+        <div class="row">
+          <div class="col-md add-details">
+            <p class="map-title">Corporate Office</p>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.8762700288003!2d72.8750646!3d21.1970736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fa274fb5939%3A0x16ad7b5d66afd844!2sTTC-%20Times%20Trade%20Center!5e0!3m2!1sen!2sau!4v1708224443619!5m2!1sen!2sau"
+                class="map"
+                style="border: 0; max-width: 100%"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md add-details">
+            <p class="map-title">Manufacturing Unit</p>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.7643123367586!2d72.865886!3d21.2108765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f0f18c4c8af%3A0xe1c7e842742ef77!2sGayatri%20Society%2C%20Hirabaugh%2C%20Surat%2C%20Gujarat%20395006%2C%20India!5e0!3m2!1sen!2sau!4v1708224608281!5m2!1sen!2sau"
+                class="map"
+                style="border: 0; max-width: 100%"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class=""></div>
+
+    <!-- JavaScript -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
